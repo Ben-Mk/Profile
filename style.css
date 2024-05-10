@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgba(255, 166, 0, 0.144);
+  background-color: rgba(255, 166, 0, 0.637);
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -48,41 +48,50 @@ body {
   }
 }
 
-.detail-container {
-  text-align: center;
+.detail-container,
+form {
+  text-align: left;
 }
-
 .detail-name,
 .detail-age,
 .detail-bio {
   font-size: 1.1rem;
   color: blue;
-  margin-bottom: .2rem;
+  margin-bottom: 0.2rem;
 }
 
 .detail-name input,
 .detail-age input,
-.detail-bio input{
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(24, 27, 206, 0.24);
-    padding: .1rem;
-    outline: none;
+.detail-bio input {
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(24, 27, 206, 0.24);
+  padding: 0.1rem;
+  outline: none;
 }
 
 .detail-age input,
-.detail-bio input{
-    margin-left: .8rem;
+.detail-bio input,
+.detail-image input {
+  margin-left: 0.8rem;
 }
 
-#create{
-    margin-block: .3rem;
-    width: 100%;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-image: radial-gradient(rgba(0, 0, 255, 0.384), rgba(255, 255, 0, 0.747));
-    font-weight: 600;
-    padding: .12rem;
-    cursor: pointer;
+input[type="file"] {
+  display: block;
+  color: blue;
+  font-size: 0.85rem;
+}
+#create {
+  margin-block: 0.3rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-image: radial-gradient(
+    rgba(0, 0, 255, 0.384),
+    rgba(255, 255, 0, 0.747)
+  );
+  font-weight: 600;
+  padding: 0.12rem;
+  cursor: pointer;
 }

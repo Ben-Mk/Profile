@@ -1,7 +1,45 @@
-
-body{
-    background-color: rgba(255, 166, 0, 0.637);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.profile-name{
-    color: green;
+body {
+  background-color: rgba(255, 166, 0, 0.637);
+  min-height: 92vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: inherit;
+}
+
+.container-profile {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+
+  border-radius: 20px;
+  background-image: radial-gradient(
+    rgba(248, 184, 195, 0.185),
+    rgba(255, 255, 0, 0.349)
+  );
+  box-shadow: 3px 0px 20px 3px rgba(24, 24, 23, 0.247);
+  padding-inline: 2.5rem;
+  padding-block: 1rem;
+}
+
+.container-profile-text {
+  margin-block: 1rem;
+  line-height: 1.4;
+  color: blue;
+  font-weight: 600;
+}
+
+#profile_pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
